@@ -14,7 +14,7 @@
         .nav-item .nav-link {
             color: white; /* Mengubah warna teks navlist menjadi putih */
             padding: 10px 15px; /* Menambahkan padding untuk tampilan tombol */
-            border: none; /* Menghilangkan border tombol */
+            border: 1px; /* Menghilangkan border tombol */
             background-color: transparent; /* Menghilangkan latar belakang tombol */
         }
         .nav-item .nav-link:hover {
@@ -23,10 +23,10 @@
         
     </style>
 </head>
-<body style="background-color:#fffff5;">
+<body style="background-color:#fffff4;">
     <!-- Navbar -->
     <header style="top:0px; left:0; position:sticky; max-width: 90%; padding: 20px 0; margin: 20px auto; border-radius: 20px; border: 1px solid #444444;">
-    <span style="color: black; font-weight: bold; font-size: 20px; position: absolute; left: 0; padding-left: 30px; margin-top:15px;">KampuskuAja</span>  
+    <span style="color: black; font-weight: bold; font-size: 20px; position: absolute; left: 0; padding-left: 30px; margin-top:15px;">KampuskuAja.</span>  
     <nav class="navbar navbar-expand-lg navbar-light" style="display: flex; justify-content: space-between; align-items: center;">  
         <div class="collapse navbar-collapse" id="navbarNav">
             <ul class="navbar-nav">

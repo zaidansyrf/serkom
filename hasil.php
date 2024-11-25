@@ -13,7 +13,7 @@
         .nav-item .nav-link {
             color: white;
             padding: 10px 15px;
-            border: none;
+            border: 1px;
             background-color: transparent;
         }
         .nav-item .nav-link:hover {
@@ -60,12 +60,12 @@
         }
     </style>
 </head>
-<body style="background-color:#fffff5;">
+<body style="background-color:#fffff4;">
     <!-- Navbar -->
     <header style="top:0; position:sticky; max-width: 90%; padding: 20px 0; margin: 20px auto; border-radius: 20px; border:10px; border: 1px solid #444444;">
     <nav class="navbar navbar-expand-lg navbar-light" style="display: flex; justify-content: space-between; align-items: center;">
         <!-- Text "KampuskuAja" on the far left, adjusted to be before the navbar -->
-        <span style="color: black; font-weight: bold; font-size: 20px; position: absolute; left: 0; padding-left: 30px;">KampuskuAja</span>
+        <span style="color: black; font-weight: bold; font-size: 20px; position: absolute; left: 0; padding-left: 30px;">KampuskuAja.</span>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ml-auto">
                     <li class="nav-item">
@@ -170,7 +170,7 @@
                 datasets: [{
                     label: 'Distribusi IPK',
                     data: ipkData,
-                    backgroundColor: ['#36a2eb', '#ff6384'],
+                    backgroundColor: ['#FFC107', '#ff6384'],
                     borderWidth: 1,
                 }]
             },
