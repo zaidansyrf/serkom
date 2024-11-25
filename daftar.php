@@ -138,16 +138,40 @@
             beasiswaSelect.value = ''; // Tidak ada pilihan
             beasiswaSelect.disabled = true;
             berkasInput.disabled = true;
+            daftarBtn.disabled = true;
         } else if (ipk >= 3.0 && ipk <= 3.4) {
             beasiswaSelect.value = "non-akademik"; // Pilihan Non-Akademik
             beasiswaSelect.disabled = false;
             berkasInput.disabled = false;
+            daftarBtn.disabled = false;
         } else if (ipk > 3.4) {
             beasiswaSelect.value = "akademik"; // Pilihan Akademik
             beasiswaSelect.disabled = false;
             berkasInput.disabled = false;
+            daftarBtn.disabled = false;
         }
     }
+       function validateFile() {
+        const fileInput = document.getElementById('berkas');
+        const fileName = fileInput.value.toLowerCase();
+        if (!fileName.endsWith('.pdf')) {
+            alert('Harap unggah file berformat PDF.');
+            fileInput.value = ''; // Reset nilai input file
+            return false;
+        }
+        return true;
+    }
+
+    // Event Listener untuk semester
+    document.getElementById('semester').addEventListener('change', setIPK);
+
+    // Validasi saat form disubmit
+    document.getElementById('registrasiForm').addEventListener('submit', function (e) {
+        if (!validateFile()) {
+            e.preventDefault(); // Cegah pengiriman form jika file tidak valid
+        }
+    });
+
 
     // Panggil fungsi saat semester berubah
     document.getElementById('semester').addEventListener('change', setIPK);

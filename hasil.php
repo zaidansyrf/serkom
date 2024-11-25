@@ -90,7 +90,7 @@
         // Ambil data registrasi untuk tabel
         $result = mysqli_query($conn, "SELECT * FROM registrasi");
 
-        echo "<h2>Hasil Registrasi</h2>";
+        echo "<h2>Hasil Pendaftaran</h2>";
         echo "<table>
         <tr>
         <th>No</th>
@@ -117,7 +117,7 @@
             <td>{$row['semester']}</td>
             <td>{$row['ipk']}</td>
             <td>{$row['beasiswa']}</td>
-        <td><a href='$filePath' download='{$row['berkas']}'>Unduh Berkas</a></td>
+            <td><a href='$filePath' download='{$row['berkas']}'>Unduh Berkas</a></td>
             <td>{$row['status_ajuan']}</td>
             </tr>";
         }
@@ -170,7 +170,7 @@
                 datasets: [{
                     label: 'Distribusi IPK',
                     data: ipkData,
-                    backgroundColor: ['#FFC107', '#ff6384'],
+                    backgroundColor: ['#B25A5A', '#FF7F7F'],
                     borderWidth: 1,
                 }]
             },
